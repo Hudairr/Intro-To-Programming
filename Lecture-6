@@ -1,0 +1,133 @@
+------E X E R C I S E S   O F   L E C T U R E - 6------
+
+- S L I D E # 20 -
+#include <iostream>
+#include <string.h>
+using namespace std;
+int main()
+{
+	bool myBirthday = true;  
+	int age = 17;
+	if (myBirthday == true) {
+		age++;
+		cout << "It is my birthday.\n I am " << age << " years old";
+	}else {
+		cout << "\n It is not my birthday" << endl;
+	}
+}
+
+- S L I D E # 21 -
+#include <iostream>
+using namespace std;
+int main() {
+        int t;
+        cout << "Enter time 24 hrs clock: "; 
+        cin >> t;
+        if (t<= 11) 
+{ cout << "It is am" << endl; }
+        else {cout << "It is pm\n"; }
+return 0;
+}
+
+- S L I D E # 23 -
+#include <iostream>
+using namespace std;
+int main() {
+	int age = 16;
+	if (age >= 18) {
+		cout << "You are elligible to vote in the UK Elections 2021.";
+	}
+	else {
+		cout << "You are not elligible to vote. \n Try again next year :)";
+	}
+	return 0;
+}
+
+- S L I D E # 24 -
+#include <iostream>
+using namespace std;
+int main() {
+	int num;
+	cout << "Enter a number:";
+	cin >> num;
+	if (num / 2) && (num=2){
+		cout << "The number you entered is even!";
+	}
+	else {
+		cout << "The number you entered is odd.";
+	}
+  return 0;
+}
+
+- S L I D E # 25 -
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num;
+    cout << "Enter a number:" ;
+    cin >> num;
+    if (num<0){
+        cout << "You've entered a negative number.";
+    }else if (num>0){
+        cout << "You've entered a positive number.";
+    }else if (num==0){
+        cout << "You've entered zero.";
+    }else {
+        cout << "Invalid number! Please try again.";
+    }
+    
+    return 0;
+}
+
+- S L I D E # 26 -
+#include <iostream>
+using namespace std;
+int main()
+{
+    int purchase, sale, amount; 
+    cout << "Enter purchase price: ";
+    cin >> purchase;
+    cout << "Enter sale price: ";
+    cin >> sale;
+    if(sale > purchase){
+        amount = sale - purchase;
+        cout << "You gained profit :D \n Profit = " << amount;
+    }
+    else if(purchase > sale){
+        amount = purchase - sale;
+        cout <<"You suffered a loss :/\n Loss = " << amount;
+    }
+    else{
+        cout << "Equal to original amount." << amount;
+    }
+    return 0;
+}
+
+- S L I D E # 27 -
+#include <iostream>
+using namespace std;
+int main(){
+    int s;
+    cout << "Enter the sides of the shape: ";
+    cin >> s;
+    if (s==3){
+        cout << "You've entered a triangle △";
+    }else if (s==4){
+        cout << "You've entered a quadrilateral □";
+    }else if (s==5){
+        cout << "You've entered a pentagon ⬠";
+    }else if (s==6){
+        cout << "You've entered a hexagon ⬡";
+    }else if (s==7){
+        cout << "You've entered a heptagon!";
+    }else if (s==8){
+        cout << "You've entered a octagon!";
+    }else if (s==9){
+        cout << "You've entered a nonagon!";
+    }else if (s==10){
+        cout << "You've entered a decagon!";
+    }else{
+        cout << "Invalid number! Please try again :)";
+    }return 0;
+}
