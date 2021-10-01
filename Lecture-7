@@ -1,0 +1,99 @@
+- S L I D E # 16 -
+#include <iostream>
+using namespace std;
+int main()
+{
+   double m;
+   cout << "Keep track of grades using this program!\n Enter percentage: ";
+   cin >> m;
+   if((m>=70) && (m<=100)){
+       cout << "That's an A! Excellent";
+   }else if((m<=69) && (m>=70)){
+       cout << "That's a B.Great Job";
+   }else if((m<=59) && (m>=70)){
+       cout << "That's a C. Can do better";
+   }else if((m<=49) && (m>=40)){
+       cout << "That's a D. Really?";
+   }else if(m<40){
+       cout << "That's an F. Didn't he study?";
+   }else {
+       cout << "Invalid marks. Please enter a percentage ranging from 0-100.";
+   }
+    return 0;
+}
+
+- S L I D E # 17 -
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    bool musicalFriend = true;
+   string friendPlays = "guitar";
+
+   string WhatINeed = "drums";
+   if (friendPlays.compare(WhatINeed) == 0) {
+      cout << "We can start a band!!! Let's get to Practice.";
+   }else {
+      cout << "We both play the " << friendPlays << ". \nWe cannot start a band :(";
+   }
+    return 0;
+}
+
+
+- S L I D E # 19 -
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t; double m;
+    cout << "Ping! \n You just received a text from your friend! How much longer is he gonna take?";
+    cin >> t;
+    if (t>15){
+        cout << "\nThat\'s no fun :/ \n Hey! I have an idea. How much money do you have?";
+        cin >> m;
+        if (m>5){
+            cout << "\n Go buy coffee!!! Nothing will cheer you up like a good ol\' cuppa coffee.";
+        }
+        else{
+            cout << "That\'s a bummer...\n";
+        }
+    }
+    else{
+    cout << "\n Hey, I have an idea. Let\'s take a walk around the city!";
+    }
+    return 0;
+}
+
+- S L I D E # 20 -
+#include <iostream>
+using namespace std;
+
+int main()
+{
+float m; 
+cout << "Enter the magnitude of the earthquake and this program will give it's description! :D ";
+cin >> m;
+if (m < 2.0) {
+    cout << "This earthquake was a Micro!";
+}else if ((3.0 > m) && (m >= 2.0)) {
+    cout << "This earthquake was a Very Minor one!";
+}else if ((4.0 > magnitude) && (magnitude >= 3.0)) {
+    cout << "This earthquake is descripted as Minor!";
+}else if ((5.0 > magnitude) && (magnitude >= 4.0)) {
+    cout << "This earthquake is descripted as Light!";
+}else if ((6.0 > magnitude) && (magnitude >= 5.0)) {
+    cout << "This earthquake is descripted as Moderate!!";
+}else if ((7.0 > magnitude) && (magnitude >= 6.0)) {
+    cout << "Woah this earthquake is descripted as a Strong one!";
+}else if ((8.0 > magnitude) && (magnitude >= 7.0)) {
+    cout << "Are you alright? This one was a Major one!";
+}else if ((10.0 > m) && (m >= 8.0)) {
+    cout << "Stay safe!! This was a Great earthquake!";
+}else {
+    cout <<  "WOAH THAT WAS A \"Meteoric\" EARTHQUAKE!";
+}
+return 0;
+}
