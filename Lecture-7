@@ -80,15 +80,15 @@ if (m < 2.0) {
     cout << "This earthquake was a Micro!";
 }else if ((3.0 > m) && (m >= 2.0)) {
     cout << "This earthquake was a Very Minor one!";
-}else if ((4.0 > magnitude) && (magnitude >= 3.0)) {
+}else if ((4.0 > m) && (m >= 3.0)) {
     cout << "This earthquake is descripted as Minor!";
-}else if ((5.0 > magnitude) && (magnitude >= 4.0)) {
+}else if ((5.0 > m) && (m >= 4.0)) {
     cout << "This earthquake is descripted as Light!";
-}else if ((6.0 > magnitude) && (magnitude >= 5.0)) {
+}else if ((6.0 > m) && (m >= 5.0)) {
     cout << "This earthquake is descripted as Moderate!!";
-}else if ((7.0 > magnitude) && (magnitude >= 6.0)) {
+}else if ((7.0 > m) && (m >= 6.0)) {
     cout << "Woah this earthquake is descripted as a Strong one!";
-}else if ((8.0 > magnitude) && (magnitude >= 7.0)) {
+}else if ((8.0 > m) && ( >= 7.0)) {
     cout << "Are you alright? This one was a Major one!";
 }else if ((10.0 > m) && (m >= 8.0)) {
     cout << "Stay safe!! This was a Great earthquake!";
