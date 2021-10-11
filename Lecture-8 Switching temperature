@@ -1,0 +1,44 @@
+~~~~ S W I T C H I N G   T E M P E R A T U R E ~~~~
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Would you like to cov=nvert temperature from Celsius or from Fahrenheit (C/F):\n ";
+	char answer;
+	double c , f;
+	cin >> answer;
+
+	switch (answer)
+	{
+
+	case 'C':
+	case 'c':
+	{
+		cout << "You selected Celsius.\a\n";
+		cout << "Enter temperature from celsius: \n ";
+		cin >> c;
+		f = (c * 1.8) + 32;
+		cout << "The temperature in Celsius " << c << " is " << f << " in Fahrenheit.";
+		break;
+	}
+
+	case 'F':
+	case 'f':
+	{
+		cout << "You selected Fahrenheit.\a\n";
+		cout << "Enter temperature from fahrenheit: \n";
+		cin >> f;
+		c = (f - 32) * 1.8;
+		cout << "The temperature in Celsius " << c << " is " << f << " in Fahrenheit.";
+		break;
+	}
+
+	default:
+	{
+		cout << "Invalid input! Please run program again.";
+	}
+	}
+	cin.get();
+	return 0;
+}
