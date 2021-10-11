@@ -1,0 +1,43 @@
+~~~~~ F U E L   C H E C K E R ~~~~~
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Would you like to refill petrol or diesel? (P/D):\n ";
+	char answer;
+	double l, price;
+	cin >> answer;
+
+	switch (answer)
+	{
+
+	case 'P':
+	case 'p':
+	{
+		cout << "You selected Petrol.\n";
+		cout << "Enter no. of litres you would like to refill:\n ";
+		cin >> l;
+		price = l * 2.42;
+		cout << "The price you have to pay is: " << price;
+		break;
+	}
+
+	case 'D':
+	case 'd':
+	{
+		cout << "You selected Diesel.\n";
+		cout << "Enter no. of litres wou would like to refill:\n ";
+		cin >> l;
+		price = l * 2.51;
+		cout << "The price you have to pay is: " << price;
+		break;
+	}
+
+	default:
+	{
+		cout << "Invalid input! Please run program again.";
+	}
+	}
+	cin.get();
+	return 0;
+}
