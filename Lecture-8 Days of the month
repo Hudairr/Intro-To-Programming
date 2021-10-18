@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    cout << "~~~~~With this program you can find out how many days are there in a month!!!~~~~~\n\n";
+    cout << "Please select the number corressponding to your month:\n";
+    cout << "\t\n1: January, March , May ,July, August, October, December \t\n2: April, June, September, November \t\n3: February \n";
+    int m;
+    cin >> m;
+    switch (m)
+    {
+    case 1:
+        cout << "\nThis month has 31 days.\n";
+        break;
+    case 2:
+        cout << "\nThis month has 30 days.\n";
+        break;
+    case 3:
+        cout << "\nThis month has 28 days.\n";
+        break;
+    default:
+        cout << "\nPlease select from the options available above.";
+    }
+}
