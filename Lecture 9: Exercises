@@ -1,0 +1,55 @@
+~~~~~~ Brute Force Completed ~~~~~~
+#include <iostream>
+using namespace std;
+int main()
+{
+	string p = "246", input;
+	int x = 3;
+	cout << "Do you know the password? Let's find out. \n You will only have five attempts.";
+	while (x > 0)
+	{
+		cout << "Enter the password to access the safe: " ;
+		cin >> input;
+		if (input == p)
+		{
+			cout << "\aCongratulations you have unlocked the safe!!!\n";
+			break;
+		}
+		else
+			x--;
+	}
+	if (x == 0)
+	{
+		cout << "\aYou ran out of attempts.";
+	}
+}
+
+~~~~~~ Input Improvement ~~~~~~
+#include <iostream>
+using namespace std;
+int main() {
+	char input;
+	do {
+		cout << "Would you like to Quit (Y/N)?" << endl;
+		cin >> input;
+		break;
+	} while ((input != 'Y') && (input != 'y'));
+	return 0;
+}
+
+~~~~~~ Loopy ~~~~~~
+#include <iostream>
+using namespace std;
+int main()
+{
+  int myInt = 0;
+  int counter;
+  cout << "Enter any whole number: ";
+  cin >> counter;
+  while (myInt <= counter) {
+	myInt++;
+  myInt -1;
+  cout << myInt;
+  }
+return 0;
+}
