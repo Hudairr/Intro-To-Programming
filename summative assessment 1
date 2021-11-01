@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "This program asks for your name, age and marks for two of your subjects.\n It also calculates the average marks and shows you your grade.";
+	string name;
+	cout << "\nEnter your name: ";
+	cin >> name;
+	string age;
+	cout << "\nEnter your age: ";
+	cin >> age;
+	if (age.size() != 2)
+	{
+		cout << "\nPlease enter your age (2-digits): ";
+		cin >> age;
+	}
+	int s1, s2, avg;
+	cout << "\nEnter marks of two subjects: ";
+	cin >> s1 >> s2;
+	avg = (s1 + s2) / 2;
+	if (!cin.fail()) {
+		switch (avg / 10) {
+		case 10:
+		case 9:
+		case 8:
+		case 7:
+			cout << "\nGreat job!!! Your grade is A.";
+			break;
+		case 6:
+			cout << "\nNice work. Your grade is B.";
+			break;
+		case 5:
+			cout << "\nGood effort. Your grade is C.";
+			break;
+		case 4:
+			cout << "\nKeep trying. Your grade is D.";
+			break;
+		case 3:
+		case 2:
+		case 1:
+			cout << "\nYou've received an F grade. \nBetter luck next time.";
+			break;
+		}
+	}
+	else {
+		cout << "\nPlease enter marks(0-100). ";
+	}
+	return 0;
+}
