@@ -1,0 +1,52 @@
+  S O M E    C O U N T I N G
+~~~~~~ Descending Stars, Seven Lines ~~~~~~
+
+int n = 7;
+	for (int i = n; i > 0; i--) {
+		for (int j = 0; j < i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+  
+  ~~~~~~ Rising Stars, Five Lines ~~~~~~
+  
+  for (int i = 0; i <= 5; i++) {
+		for (int j = i; j >= 1; j--) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	
+  ~~~~~~ Rising and Falling Stars ~~~~~~
+  
+	for (int i = 0; i <= 5; i++) {
+		for (int j = 0; j < i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	int n = 4;
+	for (int i = n; i > 0; i--) {
+		for (int j = 0; j < i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	
+  ~~~~~~ Cubes ~~~~~~
+  
+	int b;
+	cout << "Enter an integer: ";
+	cin >> b ;
+	for (int a = 1; a <= b; a++) {
+		cout << "Number is : " << a << " and the cube of " << a << " is: " << a*a*a << endl ;
+	}
+	
+  ~~~~~~ Find the 9s ~~~~~~
+  
+	for (int a = 100; a>=200; a++){
+		if(a % 9 == 0){
+		cout << a << endl;
+	}
+	
