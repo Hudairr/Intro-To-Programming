@@ -1,0 +1,68 @@
+ ~~~~~~  ~~~~~~
+
+	for (auto x = 10; x > 0; x--)
+	{
+		cout << x << "!" << endl;
+		if (x == 1) {
+			cout << "We have lift off!" << endl;
+		}
+	}
+
+S O M E  C O U N T I N G :
+~~~~~~ Write a program that counts up from 0 to 50 in increments of 1. ~~~~~~
+
+	for (int a = 100; a <= 200; a += 5) {
+		cout << a << endl;
+	}
+  
+~~~~~~ Write a program that counts down from 50 to 0 in decrements of 1. ~~~~~~
+  
+	for (int a = 50; a <= 100; a += 2) {
+		cout << a << endl;
+	}
+	
+  ~~~~~~ Write a program that counts up from 30 to 50 in increments of 1. ~~~~~~
+  
+	for (int a = 30; a <= 50; a++) {
+		cout << a << endl;
+	}
+  
+ ~~~~~~ Write a program that counts down from 50 to 10 in decrements of 2. ~~~~~~
+   
+	for(int a = 50; a >= 0; a--){
+		cout << a << endl;
+		}
+	
+ ~~~~~~ Write a program that counts up from 100 to 200 in increments of 5. ~~~~~~
+  
+	for (int a = 0; a <= 50; a++) {
+		cout << a << endl;
+	}
+
+ ~~~~~~ Iterate through a word ~~~~~~
+
+	string myword = "ARSH";
+	for (int a = 0; a < 4; a++) {
+		cout << myword.at(a) << endl;
+	}
+
+ ~~~~~~ Odd or Even ~~~~~~
+
+for (int x = 20; x <= 24; x++) {
+		if (x % 2 == 0) {
+		cout << x << "- Even" << endl;
+		}
+		else {
+			cout << x << "- Odd" << endl;
+ 		}
+	}
+
+ ~~~~~~ Seven stars, Seven lines ~~~~~~
+
+for (int i = 0; i <= 7; i++) {
+		for (int j = 0; j <= 7; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
