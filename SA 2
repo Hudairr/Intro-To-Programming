@@ -1,0 +1,65 @@
+#include<iostream>
+#include<math.h> // math library for exponential output
+using namespace std;
+
+//function declaring
+void welcome();
+int main() {
+
+	//function calling
+	welcome();
+	
+	//Taking user name
+	string name;
+	cout << "\nFirst thing's first, tell us your name!\n";
+	cin >> name;
+
+
+	//Taking user input
+	int n;
+	cout << "\nCool name! Now, enter a positive integer: \n";
+	cin >> n;
+
+	//error checking if-else statement
+	while (n < 0 || cin.fail() ) {																//error checking for user input
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cout << "Error! Be sure to enter a positive integer and nothing else but numbers!\n" << endl;
+		cout << "Enter a number:- " << endl ;
+		cin >> n;
+	}
+		//Factorial variable
+		double f = 1.0;
+		//"Factorial" loop
+		for (int i = 1; i <= n; ++i) {
+			f *= i;
+		}
+		cout << "\na) The factorial of " << n << " = " << f << endl;  // Factorial print
+
+		//"Multiplication Table" part
+		cout << "\nb) The table of the number " << n << " is the following:- \n" << endl;
+		for (int x = 1; x <= 10; x++) {
+			cout << n << " x " << x << " = " << n * x << endl;
+		}
+
+		//"Exponent power from 0-10" part
+		cout << "\nc) The exponents of " << n << " from 0-10 are the following:- \n" << endl;
+		for (int e = 0; e <= 10; e++) {
+			cout << n << " power to " << e << " is equal to " << pow(n, e) << endl;
+		}
+
+		int input;
+		do
+		{
+			cout << "Would you like to Quit (Y/N)?" <<
+				endl;
+			cin >> input;
+		} while ((input != 'Y') && (input != 'y'));
+
+		return 0;
+}
+// the actual function that describes what the program is about!
+	void welcome()  {				
+	cout << "Welcome to this program! This is a program that helps you: \n\na) find the factorial, \nb) print the multiplication table\nc)print the exponent powers from 0-10" << endl;
+
+}
