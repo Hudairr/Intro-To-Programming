@@ -1,0 +1,41 @@
+E X E R C I S E # 1
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+string rootValue (int r) {            //rootvalue is calculated
+	for (int i = 0; i <= 10; i++) {
+		i *= r;
+		return "Code is completed";
+	}
+}
+
+int main() {
+	cout << "Enter any integer : " << endl;    //ask the user for an integer
+	int userInput;
+	cin >> userInput;
+	cout << rootValue(userInput) << endl;
+	return 0;
+}
+
+E X E R CI S E # 2
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+string expValue(int e) {            //exponent value is calculated
+	for (int i = 0; i <= 10; i++) {
+		pow(e, i);
+		return "Code is completed";
+	}
+}
+
+int main() {
+	cout << "Enter any integer : " << endl;    //ask the user for an integer
+	int userInput;
+	cin >> userInput;
+	cout << expValue(userInput) << endl;
+	return 0;
+}
