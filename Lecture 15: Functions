@@ -1,0 +1,25 @@
+// Y O U   S A Y   H E L L O   I   S A Y   G O O D B Y E 
+#include<iostream>
+
+using namespace std;
+
+void welcome();
+void bai();
+//funcation declaration
+
+int main() {
+
+	welcome();
+	bai();
+	//function call
+
+	return 0;
+}
+
+void welcome() {
+	cout << "Welcome to my program! \t I'm huda!" << endl;
+}
+
+void bai() {
+	cout << "Aw I gotta go code. \n Cya later \n baiiiiiii";
+}
