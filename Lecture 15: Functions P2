@@ -1,0 +1,109 @@
+~~~~~~ P A S S I N G   V A L U E S ~~~~~~
+#include<iostream>
+using namespace std;
+
+void myCalculation(int num) {
+	num *= 2;
+	num += 8;
+	cout << num << endl;
+}
+
+int main() {
+	int userNum;
+	cout << "Enter a number: ";
+	cin >> userNum;
+	myCalculation(userNum);
+
+	return 0;
+}
+
+~~~~~~ R E T U R N I N G   V A L U E S ~~~~~~
+#include<iostream>
+using namespace std;
+
+int myCalculation(int num) {
+	num *= 2;
+	num += 8;
+	return num;
+}
+
+int main() {
+	int userNum;
+	cout << "Enter a Number: ";
+	cin >> userNum;
+	userNum = myCalculation(userNum);
+	cout << userNum << endl;
+	return 0;
+}
+
+~~~~~~ R E T U R N I N G   V A L U E S  -  P U R C H A S E   P R O D U C T S ~~~~~~
+#include<iostream>
+using namespace std;
+
+double sumItems(double item1, double item2) {
+	double total = item1 + item2;
+	return total;
+}
+
+int main() {
+	double myMoney = 40.00;
+	double shoes = 25.99;
+	double tshirt = 11.50;
+	if (sumItems(shoes, tshirt) <= myMoney){
+	cout << "You can afford these items." << endl;
+	}
+	else {
+		cout << "Keep saving up." << endl;
+	}
+
+~~~~~~ R E T U R N I N G   V A L U E S  -  T I M E ~~~~~~
+	#include<iostream>
+using namespace std;
+
+string greetings(int time) {
+	if (time < 12) {
+		return "Good Morning";
+	}
+	else {
+		return "Good Afternoon";
+	}
+}
+int main() {
+	cout << "What time is it?" << endl;    //ask the user for time
+	int userInput;						   //
+	cin >> userInput;
+
+	cout << greetings(userInput) << endl;		//output string returned by function
+	return 0;
+}
+
+~~~~~~ E X E R C I S E   B R E A K ~~~~~~
+#include <iostream>
+using namespace std;
+
+string greetings(int time) {
+	if (time < 12) {
+		return "Good Morning";
+	}
+	else if (time >= 12 && time <= 17) {
+		return "Good Afternoon";
+	}
+	else if (time > 17 && time <= 21) {
+		return "Good evening";
+	}
+	else if (time > 21 && time <= 24) {
+		return "Good night";
+	}
+	else {
+		return "Good night";
+	}
+}
+
+int main() {
+	cout << "What time is it?" << endl;    //ask the user for time
+	int userInput;						   //
+	cin >> userInput;
+
+	cout << greetings(userInput) << endl;		//output string returned by function
+	return 0;
+}
