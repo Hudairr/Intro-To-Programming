@@ -1,0 +1,183 @@
+~~~~~~ E R R O R   C H E C K I N G ~~~~~~~
+
+int y;
+		cout << "Enter a number you want the table of: " << endl;
+		cin >> y;
+		while (cin.fail())
+		{
+			cout << "Invalid command enter the number again: " << endl;
+			cin.clear();
+			cin.ignore(1000, '\n');
+			cin >> y;
+		}
+		for (int x = 0; x <= 10; x++)
+		{
+			cout << y << " x " << x << " = " << y * x << endl;
+		}
+	}
+  
+  ~~~~~~ R I S I N G   S T A R S ~~~~~~
+  #include<iostream>
+using namespace std;
+int main() {
+    int k = 1, l = 1;
+	while (k <= 5) {
+		l = 1;
+		while (l <= k) {
+			cout << "*";
+			l++;
+		}
+		cout << "\n";
+		k++;
+	}
+	return 0;
+}
+
+  ~~~~~~ F A L L I N G   S T A R S ~~~~~~
+  #include<iostream>
+using namespace std;
+int main() {
+	int i = 1, j = 1;
+	while (i <= 5) {
+		j = i;
+		while (j <= 5) {
+			cout << "*";
+			j++;
+		}
+		cout << "\n";
+		i++;
+	}
+  return 0;
+}
+  
+  ~~~~~~ R I S I N G   &   F A L L I N G   S T A R S ~~~~~~
+  #include<iostream>
+using namespace std;
+int main() {
+	int i = 1, j = 1;
+	while (i <= 5) {
+		j = i;
+		while (j <= 5) {
+			cout << "*";
+			j++;
+		}
+		cout << "\n";
+		i++;
+	}
+	int k = 1, l = 1;
+	while (k <= 5) {
+		l = 1;
+		while (l <= k) {
+			cout << "*";
+			l++;
+		}
+		cout << "\n";
+		k++;
+	}
+	return 0;
+}
+
+  ~~~~~~ F A C T O R I A L   O F   A   N U M B E R ~~~~~~
+  int n;
+	double f = 1.0;
+	cout << "Enter a positive integer: ";
+	cin >> n;
+	if (n < 0) {
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cout << "Error! Factorial of a negative number doesn't exist.";
+	}
+	else {
+		for (int i = 1; i <= n; ++i) {
+			f *= i;
+		}
+		cout << "Factorial of " << n << " = " << f;
+	}
+  
+  ~~~~~~ T A B L E : F O R   L O O P ~~~~~~
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int y;
+	cout << "Enter a number you want the table of: " << endl;
+	cin >> y;
+	while (cin.fail())
+	{
+		cout << "Invalid command enter the number again: " << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> y;
+	}
+	for (int x = 0; x <= 10; x++)
+	{
+		cout << y << " x " << x << " = " << y * x << endl;
+	}
+}
+
+~~~~~~ T A B L E : W H I L E   L O O P ~~~~~~
+  #include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int y;
+	cout << "Enter a number you want the table of: " << endl;
+	cin >> y;
+	while (cin.fail())
+	{
+		cout << "Invalid command enter the number again: " << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> y;
+	}
+	int x = 0;
+	while (x <= 10){
+		cout << y << " x " << x << " = " << y * x << endl;
+		x++;
+	}
+}
+
+~~~~~~ T A B L E : F O R  L O O P  V A R I A T I O N ~~~~~~
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int y, z;
+	cout << "Enter a number you want the table of: " << endl;
+	cin >> y;
+	cout << "Enter till what number the table should end:  " << endl;
+	cin >> z;
+	while (cin.fail())
+	{
+		cout << "Invalid command enter both the numbers again: " << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> y;
+		cin >> z;
+	}
+	for (int x = 0; x <= z; x++)
+	{
+		cout << y << " x " << x << " = " << y * x << endl;
+	}
+}
+  
+  ~~~~~~ F I N D   T H E   9' S : D O   W H I L E ~~~~~~
+  int x = 0;
+		int sum = 0;
+		do
+		{
+			x++;
+			if (x % 9 == 0)
+			{
+				cout << "\nNumber is " << x << " ";
+				sum = sum + x;
+				
+			}
+
+		} while (x <= 200);
+		cout << endl;
+		cout << "\nThe sum is " << sum << endl;
+	}
