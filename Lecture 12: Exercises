@@ -1,0 +1,40 @@
+~~~~~~ I N P U T / O U T P U T   D I S P L A Y ~~~~~~
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int i_o[5];          //Variable name short form for Input/Output
+	for (int i = 0; i < 5; i++) {
+		cout << "Input #" << i + 1 << " :" << endl;
+		cin >> i_o[i];
+		while (cin.fail()) {
+			cout << "Error! Please enter the number again: \n";
+			cin.clear();
+			cin.ignore();
+			cin >> i_o[i];
+		}
+	}
+	cout << "The numbers you entered are the following: \n";
+	for (auto input_output : i_o){     //Range based for loop
+		cout << input_output << endl;
+		}
+	return 0;
+}
+
+~~~~~~ A R R A Y   A R T ~~~~~~~
+#include<iostream>
+#include <array>
+#include <string>
+using namespace std;
+int main()
+{
+	string art[5][1] = { "----", "-0-0-", "-@@@-", "-^^^-", "-vvv-" };
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 1; j++) {
+			cout << art[i][j] << "\n";
+		}
+		cout << endl;
+	}
+	return 0;
+}
