@@ -1,0 +1,76 @@
+~~~~~~ R A N D O M    N O .   G E N E R A T O R ~~~~~~
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <exception>
+#include <array>
+#include <random>
+using namespace std;
+int main()
+{
+int randomarr[1000];
+	srand(time(0));
+	int count = 0;
+	for (int i = 0; i < 1000; i++)
+	{
+		randomarr[i] = rand() % 100;
+		cout << randomarr[i] << endl;
+		if (randomarr[i] == 6) {
+			count = count + 1;
+		}
+		else {
+			continue;
+		}
+	}
+	cout << "\nThe number 6 has appeared " << count << " times.\n";
+  }
+  
+  ~~~~~~ L A R G E S T   N U M B E R ~~~~~~
+#include<iostream>
+#include<string>
+#include<array>
+#include<algorithm>
+using namespace std;
+int main()
+{
+	array<int, 10> nums;
+	cout << "Enter 10 numbers:" << endl;
+	for (int i = 0; i < 10; i++) {
+		cin >> nums[i];
+		while (cin.fail()) {
+			cout << "Invalid command, enter the marks again\n";
+			cin.clear();
+			cin.ignore();
+			cin >> nums[i];
+		}
+		cout << "Next integer value: " << endl;
+	}
+	sort(nums.begin(), nums.end());
+	cout << "The largest number is: " << nums.back() << endl;
+return 0;
+}
+  
+  ~~~~~~ S M A L L E S T  N U M B E R ~~~~~~
+#include<iostream>
+#include<string>
+#include<array>
+#include<algorithm>
+using namespace std;
+int main()
+{
+	array<int, 10> nums;
+	cout << "Enter 10 numbers:" << endl;
+	for (int i = 0; i <= 10; i++) {
+		cin >> nums[i];
+		while (cin.fail()) {
+			cout << "Invalid command, enter the marks again\n";
+			cin.clear();
+			cin.ignore();
+			cin >> nums[i];
+		}
+		cout << "Next integer value: " << endl;
+	}
+	sort(nums.begin(), nums.end());
+	cout << "The smallest number is: " << nums.front() << endl;
+	return 0;
+}
