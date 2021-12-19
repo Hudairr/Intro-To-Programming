@@ -1,0 +1,110 @@
+~~~~~~ B I O G R A P H Y ~~~~~~
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	cout << "Kindly enter the correct value when prompted.\n";
+  // initializing variables
+	string name, address;
+	int age;
+  // the input statements
+	cout << "\nEnter your name: ";
+	cin >> name;
+	cout << "\nEnter your age: ";
+	cin >> age;
+	cout << "\nEnter your address:" << address;
+	cin >> address;
+  //the output statements
+	cout << "The name you entered is: \n" << name;
+	cout << "The age you entered is: \n" << age;
+	cout << "The address you entered is: \n" << address;
+	return 0;
+}
+
+~~~~~~~ T E M P E R A T U R E ~~~~~~~
+#include <iostream>
+using namespace std;
+int main()
+{
+  //initializing variables
+	double c, f;
+	cout << "This program will convert the temperature from Fahrenheit to Celsius degree."<< endl;
+  // the input statements
+	cout << "Enter the temperature in Fahrenheit: " << endl;
+	cin >> f;
+  //the formula
+	c = (f - 32) * 0.5556;
+  // the output statements
+	cout << "The temperature in Celcius is: " << c << endl;
+	return 0;
+}
+
+~~~~~~ T E M P E R A T U R E ~~~~~~
+#include <iostream>
+using namespace std;
+int main()
+{
+  // initializing variables
+	double c, f;
+	cout << "This program will convert the temperature from Celsius to Fahrenheit."<< endl;
+  // the input statements
+	cout << "Enter the temperation in Celsius: " << endl;
+	cin >> c;
+  // the formula
+	f = (c * 1.8) + 32;
+  // the output statements
+	cout << "The temperature in Fahrenheit is: " << f << endl;
+}
+
+~~~~~~ C I R C L E S ~~~~~~
+#include <iostream>
+using namespace std;
+int main()
+{
+// initializing variables
+	double r, a, c;
+  
+	cout << "This program will calculate the area and circumference of the circle." << endl;
+  
+  // the input statements
+	cout << "Enter the radius of the circle: " << endl;
+	cin >> r;
+  
+  // the formulae
+	a = 3.14 * r * r;
+	c = 2 * 3.14 * r;
+  
+  // the output statements
+	cout << "The area of the circle is: " << a << endl;
+	cout << "The circumference of the circle is: " << c << endl;
+	return 0;
+}
+~~~~~~ R E C T A N G L E , T R I A N G L E , S Q U A R E ~~~~~~
+#include <iostream>
+using namespace std;
+int main()
+{
+	// initializing variables
+	double l, w, r, t, s;
+
+	cout << "This program will calculate the area for rectangle, triangle and square for you."<< endl;
+  
+  // the input statements
+	cout << "Enter the length of the shape: "<< endl;
+	cin >> l;
+	cout << "\nEnter the width of the shape: "<< endl;
+	cin >> w;
+
+	// the formulae
+	r = l * w;
+	t = (l * w) * 0.5;
+	s = l * l;
+
+	// the output statements
+	cout << "The area of rectangle : " << r << endl;
+	cout << "The area of triangle: " << t << endl;
+	cout << "The area of square: " << s << endl;
+  
+	return 0;
+}
